@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::get('/', 'Web@home');
+Route::get('/contact', 'Web@contact');
+Route::get('/about', 'Web@about');
